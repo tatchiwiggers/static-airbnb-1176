@@ -1,0 +1,11 @@
+<h1>All Flats</h1>
+
+<ul>
+    <% @flats.each do |flat| %>
+        <li>                                  #flats/145
+            <h3><%= link_to flat['name'], flat_path(flat['id']) %></h3>
+        </li>
+    <% end %>
+</ul>
+
+# link_to 'text with link', path of page to be taken to -> prefix_path(if we need id pass here)
